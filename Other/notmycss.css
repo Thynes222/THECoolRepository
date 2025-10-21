@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 25%;
+    margin-right: 32%;
+  }
+  
+  /* These classes will be applied to the body
+  of the different pages, to ensure the entire
+  page is displayed in the color */
+  .red {
+    background-color: red;
+  }
+  .green {
+    background-color: green;
+  }
+  .blue {background-color: blue;
+  }
+  
+  
+  /* change the meaning of the nav tag */
+  /* These manipulate the appearance of the text/links */
+  nav {
+    text-align: center;
+    letter-spacing: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-shadow: 2px 2px grey;
+  }
+  
+  /* This will override the code below, becaue it is 
+  more specific */
+  nav a:visited {
+    color: blue;
+  }
+  
+    /* make all links white */
+  a:link, a:visited {
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+  }
+  
+  /* make classes for the colors */
+  /* These are applied on as a class on */
+  /* the a tags for that pages color */
+  /* It makes them NOT white */
+  a.red:link {color: green;}
+  a.red:visited {color: green;}
+  a.green:link {color:purple;}
+  a.green:visited {color:purple;}
+  a.blue:link {color: orange;}
+  a.blue:visited {color: orange;}
+  
+  /* keyframes are required for animation */
+  /* which I am not using right now */
+  @keyframes img_anime {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(80vw);
+    }
+  }
+  
+  /* These are the settings for the Red page background image */
+  .pageImageRed {
+    background-image: url("images/red.jpg"); /* the image used */
+    background-color: red; /* used if the image is not avail */
+    height: 40vh; /* sets to 80% of the viewport */
+    width: 80%; /* set the width to 80% of the tag */
+    margin-left: 10%; /* allocate 10% of the 20% margin */
+    margin-right: 10%; /* and allocate the other 10% */
+    background-repeat: no-repeat; /* default is to tile the img */
+    background-position: center; /* centers both horiz and vert */
+    background-size: cover; /* will crop or expand image re vh */
+    background-attachment: fixed; /* image stays in place, content scrolls over */
+    animation-duration: 10s;
+    animation-timing-function: linear;
+  }
+  
+  /* These are the settings for the Green page background image */
+  .pageImageGreen {
+    background-image: url("images/green.jpg"); /* the image used */
+    background-color: green; /* used if the image is not avail */
+    height: 80vh; /* sets to 80% of the viewport */
+    width: 80%; /* set the width to 80% of the tag */
+    margin-left: 10%; /* allocate 10% of the 20% margin */
+    margin-right: 10%; /* and allocate the other 10% */
+    background-repeat: no-repeat; /* default is to tile the img */
+    background-position: center; /* centers both horiz and vert */
+    background-size: cover; /* will crop or expand image re vh */
+    background-attachment: fixed; /* image stays in place, content scrolls over */
+  }
+  
+  /* These are the settings for the Blue page background image */
+  .pageImageBlue {
+    background-image: url("images/BG-1400.jpg"); /* the image used */
+    background-color: blue; /* used if the image is not avail */
+    height: 80vh; /* sets to 80% of the viewport */
+    width: 80%; /* set the width to 80% of the tag */
+    margin-left: 10%; /* allocate 10% of the 20% margin */
+    margin-right: 10%; /* and allocate the other 10% */
+    background-repeat: no-repeat; /* default is to tile the img */
+    background-position: center; /* centers both horiz and vert */
+    background-size: cover; /* will crop or expand image re vh */
+    background-attachment: fixed; /* image stays in place, content scrolls over */
+  }
+  
+  /* an emply class as an ecample of how to make a class */
+  .null_config {
+    
+  }

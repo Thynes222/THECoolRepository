@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="audiotag1" src="Sounds/bear.wav" preload="auto"></audio>
+    <audio id="audiotag2" src="Sounds/bird.wav" preload="auto"></audio>
+    <audio id="audiotag3" src="Sounds/bison.wav" preload="auto"></audio>
+    <audio id="audiotag4" src="Sounds/cat.wav" preload="auto"></audio>
+    <audio id="audiotag5" src="Sounds/goat.wav" preload="auto"></audio>
+
+    <h1>A JavaScript Client Side Script</h1>
+
+    <p>Select an animal:</p>
+
+    <select id="animalsounds">
+        <option value="bear">Bear</option>
+        <option value="bird">Bird</option>
+        <option value="bison">Bison</option>
+        <option value="cat">Cat</option>
+        <option value="goat">Goat</option>
+    </select>
+
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        function myFunction() {
+
+            var thesound, text;
+
+            thesound = document.getElementById("animalsounds").value;
+
+            if (thesound == "bear") {
+
+                text = "<img src=Images/bear.jpg>";
+
+                document.getElementById('audiotag1').play();
+            } else if (thesound == "bird") {
+                text = "<img src=Images/bird.jpg>";
+                document.getElementById('audiotag2').play();
+
+            } else if (thesound == "bison") {
+                text = "<img src=Images/bison.jpg>";
+                document.getElementById('audiotag3').play();
+
+            } else if (thesound == "cat") {
+                text = "<img src=Images/cat.jpg>";
+                document.getElementById('audiotag4').play();
+            
+            } else if (thesound == "goat") {
+                text = "<img src=Images/goat.jpg>";
+                document.getElementById('audiotag5').play();
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        }
+
+
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <a href="../index.html">Back to Home</a>
+
+</body>
+</html>

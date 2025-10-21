@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Form</title>
+<link rel="stylesheet" type="text/css" href="form.css">
+<script LANGUAGE="JavaScript">
+<!--
+	function formValidation (form) {
+		//alert("hello");
+		//single line comment
+		/*This is a multiple line comment*/
+	
+		var FirstName = form.firstname.value;
+		
+		var LastName = form.lastname.value;
+
+		var Password = form.psw.value;
+
+		var Email = form.email.value;
+
+var FirstLine = ("Welcome " + FirstName + " " + LastName + " and your email is " + Email + "\n\n");
+
+var ThePass = ("Your password " + Password + " is safe with me! \n\n");
+	
+		alert(FirstLine + ThePass);
+
+		var Grade = form.grade.value;
+		var Comment = form.message.value;
+		var SweetRide = form.cars.value;
+var SecondLine = ("Your sweet ride is a " + SweetRide + " and you are a " + Grade + " and your comment was " + Comment + "\n\n");
+		alert(SecondLine);
+
+		var Vehicles = "";
+		if (form.vehicle1.checked && form.vehicle2.checked){
+			Vehicles = "You have a Bike and a Car.";
+		}else if(form.vehicle1.checked){
+			Vehicles = "You have a Bike.";
+		}else if(form.vehicle2.checked){
+			Vehicles = "You have a Car.";
+		}else{
+			Vehicles = "Start walking.";
+		}
+
+		
+		alert(Vehicles);
+
+
+		
+	}
+
+-->
+</script>
+</head>
+<body>
+<!-- HTML Comment -->
+<form action="2019-Working.html" method="get">
+ <fieldset>
+    <legend>Personal information:</legend>
+  First name:<br>
+  <input type="text" name="firstname" value="Gordon" size="25" maxlength="25" autofocus tabindex="1"/>
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Reynolds" size="25" maxlength="25"  tabindex="3">
+  <br>
+  Password:<br>
+	<input type="password" name="psw" value="1234" size="25" tabindex="5">
+  <br><br>
+  Email<br>
+	 <input type="email" name="email" value="greynolds@sau52.org" size="25" required>
+  <br><br>
+  <input type="radio" name="grade" value="freshman" required> Freshman<br>
+  <input type="radio" name="grade" value="sophomore"> Sophomore<br>
+  <input type="radio" name="grade" value="junior"> Junior<br>
+  <input type="radio" name="grade" value="senior citizen" checked> Senior Citizen<br>
+  <br><br>
+	
+	<select name="cars">
+		<option value="select">Select</option>  		
+		<option value="volvo">Volvo</option>
+  		<option value="saab">Saab</option>
+  		<option value="fiat">Fiat</option>
+  		<option value="audi">Audi</option>
+		<option value="subaru" selected>Subaru</option>
+	</select>
+	 <br><br>
+		<textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+	
+	
+	
+	<br><br>
+	 <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  	 <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+
+	
+
+
+	<br><br><input type="submit" value="Submit This Homey" onClick="formValidation(this.form)" tabindex="4">
+	<br><br>
+	 <input type="reset" tabindex="2">
+</fieldset>
+</form> 
+<button type="button" onclick="alert('You broke the window!')">Don't Click Me!</button>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+</html>

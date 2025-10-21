@@ -1,0 +1,19 @@
+.backgroundcolor {
+    background-color: #35ad92;
+}
+
+div.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    background-color: rgb(59, 123, 243);
+}
+
+.sidebar {
+    border: black 5x solid;
+    width: 900px;
+    float: right;
+    padding-left: 900px;
+    padding-right: 900px;
+    padding-top: 900px;
+}

@@ -1,0 +1,10 @@
+.heading {
+    background-image: url(ThreePage/images/green.png);
+    height: 370px;
+    width: 700px;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    top: 0px;
+}
+

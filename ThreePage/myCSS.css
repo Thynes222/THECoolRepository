@@ -1,0 +1,51 @@
+.blue {
+    background-color: #7ea2e4;
+}
+
+.blueimage {
+    background-image: url(images/blue.png);
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 700px;
+    background-position: center;
+    background-attachment: fixed;
+    top: 0px;
+    margin: auto;
+}
+
+.red {
+    background-color: #eb3c3c;
+}
+
+.redimage {
+
+    background-image: url(images/red.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    top: 0px;
+    margin: auto;
+}
+
+.green {
+    background-color: #6a8b0d;
+}
+
+.greenimage {
+    background-image: url(images/green.png);
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 700px;
+    background-position: center;
+    background-attachment: fixed;
+    top: 0px;
+    margin: auto;
+}
+
+nav {
+    margin-left: 0px;
+    text-align: center;
+    letter-spacing: 10px;
+}
