@@ -1,3 +1,8 @@
+html,body {
+    margin-top: 0;
+}
+
+/*
 .heading {
     background-image: url(images/textlessheading.png);
     background-repeat: no-repeat;
@@ -9,6 +14,7 @@
     margin: 0 auto;
     transform: scale(0.8, 0.9);
 }
+    */
 
 .backroundcolor {
     background-color: #35ad92;
@@ -32,6 +38,8 @@ nav {
     display: inline-block;
     font-size: 16px;
     padding-left: 100px;
+    animation: navSlide;
+    animation-duration: 2s;
 }
 
 nav a{
@@ -86,6 +94,14 @@ nav a{
     font-weight: bold;
 }
 
+
+.textforheading {
+    animation: navSlide;
+    animation-duration: 2.5s;
+    overflow: hidden;
+    width: 100%;
+} 
+
 @keyframes navSlide {
     from {
         margin-top: 100%;
@@ -97,9 +113,41 @@ nav a{
     }
 }
 
-.textforheading {
-    animation: navSlide;
-    animation-duration: 2.5s;
-    overflow: hidden;
+/* I stole Aaron's code */
+
+/* NONE OF THIS STUPID SHIT WORKS */
+.animatedheader {
+    background-image: url("images/textlessheading.png");
+    background-color: #35ad92;
+    /* height and width is the ratio for the facebook header */
+    height: 664px;  
+    width: 1640px;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.animatedheader h1{
+    background-image: url("images/textlessheading.png");
+    text-align: center;
+    height: 0px;
+    padding-top: 90px;
+    animation-name: h1Animation;
+    animation-duration: 5s;
     width: 100%;
-} 
+    overflow: hidden;
+}
+
+@keyframes h1Animation {
+    from {
+        margin-left: -200%;
+        width: 300%;
+        background: transparent;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+        background: transparent;
+    }
+}
