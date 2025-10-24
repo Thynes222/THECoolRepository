@@ -8,10 +8,15 @@
     top: 0px;
     margin: 0 auto;
     transform: scale(0.8, 0.9);
+    border: 1px solid black;
 }
 
 .backroundcolor {
     background-color: #35ad92;
+}
+
+body {
+    border: 1px solid black;
 }
 
 .sidebar {
