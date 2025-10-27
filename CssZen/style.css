@@ -30,114 +30,131 @@ Make sure you incorporate C.R.A.P into your design.
 /*I am placing this default command in every block so the IDE does not highlight the command for being empty*/
 /*Delete this command from the blocks when you put your own commands in*/
 html {
-    position:relative;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  body { 
-    position:relative;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  /*will style all your a tags*/
-  a:link { 
-      color: #B7A5DF;
-      border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  /*will control what happens on a hover of a tags*/
-  a:hover { 
-    position:relative;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  /*something like this control what to a tags only in the .sidebar*/
-  .sidebar a:link { 
-    position:relative;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  /*this tag puts a dotted underline under text*/
-  abbr {
-      /*border-bottom: none;*/
-    position:relative;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  /*surrounds entire site except exta divs*/
-  .page-wrapper { 
-    position:relative;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  /*surrounds header, .summary, .preamble*/
-  section.intro { 
-    position:relative;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  header {
-    background-color: #105e33;
-    border-radius: 50%;
-    width: 300px;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  header h1 { 
-    position:relative;
-    width: 100px;
-	height: 50px;
-	transform: skew(20deg);
-	background: #1ca75b;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  header h2 { 
-    position:relative;
-    width: 100px;
-	height: 50px;
-	transform: skew(20deg);
-	background: #1ca75b;
-    padding-top: 50px;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  /*surrounds .explanation .participation .benefits .requirements footer*/
-  div.main {
-    position:relative;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  /*These are all your major sub-elements, you can give a whole group of classes commands by grouping them separated by , */
-  /*You can get more specific by styling the <p> tags or the <h3> tags or a specific <p> tag with a command like*/
-  /*suppary p would style every <p> inside of summary */
-  header, .summary, .preamble, .explanation, .participation, .benefits, .requirements, footer{
-    position:relative;
-    border: 1px solid black;
-  }
-  
-  /*every CSS block needs a comment, if you don't need it delete it*/
-  /*There are 6 extras at the very bottom of the page*/
-  .extra1 {
-    /*code below will place element at top of page*/
-    /*
+  position: relative;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+body {
+  position: relative;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+/*will style all your a tags*/
+a:link {
+  color: #B7A5DF;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+/*will control what happens on a hover of a tags*/
+a:hover {
+  position: relative;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+/*something like this control what to a tags only in the .sidebar*/
+.sidebar a:link {
+  position: relative;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+/*this tag puts a dotted underline under text*/
+abbr {
+  /*border-bottom: none;*/
+  position: relative;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+/*surrounds entire site except exta divs*/
+.page-wrapper {
+  position: relative;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+/*surrounds header, .summary, .preamble*/
+section.intro {
+  position: relative;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+header {
+  background-color: #105e33;
+  border-radius: 50%;
+  width: 300px;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+header::after {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  transform: skew(20deg);
+  background: #1ca75b;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+header h1 {
+  position: relative;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+header h2 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  transform: skew(20deg);
+  background: #1ca75b;
+  padding-top: 50px;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+header h2 text {
+  transform: none;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+/*surrounds .explanation .participation .benefits .requirements footer*/
+div.main {
+  position: relative;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+/*These are all your major sub-elements, you can give a whole group of classes commands by grouping them separated by , */
+/*You can get more specific by styling the <p> tags or the <h3> tags or a specific <p> tag with a command like*/
+/*suppary p would style every <p> inside of summary */
+header,
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+  position: relative;
+  border: 1px solid black;
+}
+
+/*every CSS block needs a comment, if you don't need it delete it*/
+/*There are 6 extras at the very bottom of the page*/
+.extra1 {
+  /*code below will place element at top of page*/
+  /*
     position:absolute;
     top:0px;
     width:image width;
     height:image height;
     */
-    position:relative;
-    border: 1px solid black;
-  }
+  position: relative;
+  border: 1px solid black;
+}
