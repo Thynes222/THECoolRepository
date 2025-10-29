@@ -22,7 +22,7 @@ You need some kind of special effect, JavaScript or CSS Animation.
 Make sure you incorporate C.R.A.P into your design. 
 ***************************************************/
 
-/*  My Primary color for my palette is: #039ab9, my secondary colors are: #175059, #bb946b, 1dbed0 */
+/*  My Primary color for my palette is: #00aeda, my secondary colors are: #a8a196, #374d10, #fff, #ffd700 */
 
 /*every CSS block needs a comment, if you don't need it delete it*/
 /*all HTML tags are by default position: relative*/
@@ -33,12 +33,13 @@ html {
   position: relative;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+/*The body sets up the water, and the sand that bridges the water image with the bottom of the website*/
 body {
   position: relative;
   background-image: url(images/underwater.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #a8a196;
+  background-size: 2000px 2000px;
 }
 
 
@@ -59,6 +60,7 @@ a:hover {
   position: relative;
 }
 
+/*Even though it says sidebar, its on the bottom.*/
 .sidebar {
   background-image: url(images/sand.jpg);
   background-repeat: no-repeat;
@@ -84,7 +86,7 @@ section.intro {
   position: relative;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+/*This is just the sea turtle up top and the title*/
 header {
   background-image: url(images/transparentturtle.png);
   background-repeat: no-repeat;
@@ -93,29 +95,20 @@ header {
   padding-left: 730px;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
-/*header::after {
-  width: 100px;
-  height: 50px;
-  transform: skew(20deg);
-  background: #1ca75b;
-  float: left;
-  clear: left;
-} */
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+/*Header h1 tag styling*/
 header h1 {
   position: relative;
   color: #fff;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+/*Header h2 tag styling*/
 header h2 {
   position: relative;
   color: #fff;
 }
 
-/*every CSS block needs a comment, if you don't need it delete it*/
+/*Header h2 tag text styling*/
 header h2 text {
   transform: none;
   color: #fff;
@@ -125,10 +118,11 @@ header h2 text {
 /*surrounds .explanation .participation .benefits .requirements footer*/
 div.main {
   position: relative;
-  background-image: url(images/seagrass.png);
+  background-image: url(images/wmremove-transformed.png);
   background-repeat: no-repeat;
-  background-size: 2000px 1100px;
+  background-size: 2000px 900px;
   background-position: bottom;
+  background-position-y: bottom;
 }
 
 
@@ -148,10 +142,12 @@ footer {
   font-size: x-large;
 }
 
+/*This puts the fish in the explanation blurb*/
 .explanation {
-  background-image: url(images/fish.png);
+  background-image: url(images/flippedfish.png);
   background-repeat: no-repeat;
-  background-size: 300px 100px;
+  background-size: 350px 150px;
+  background-position: right;
   text-align: center;
   font-weight: bolder;
   color: #fff;
@@ -160,6 +156,7 @@ footer {
   padding-left: 500px;
 }
 
+/*used to set up text color, alignment, and boldness in the blurbs*/
 .participation {
   text-align: center;
   font-weight: bolder;
@@ -167,6 +164,7 @@ footer {
   padding-right: 500px;
 }
 
+/*used to set up text color, alignment, and boldness in the blurbs*/
 .benefits {
   text-align: center;
   font-weight: bolder;
@@ -174,6 +172,7 @@ footer {
   padding-left: 500px;
 }
 
+/*used to set up text color, alignment, and boldness in the blurbs*/
 .requirements {
   text-align: center;
   font-weight: bolder;
@@ -181,6 +180,7 @@ footer {
   padding-right: 500px;
 }
 
+/*used to set up text color, alignment, and boldness in the blurbs*/
 .preamble {
   text-align: center;
   font-weight: bolder;
