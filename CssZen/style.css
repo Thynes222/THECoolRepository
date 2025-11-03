@@ -203,7 +203,7 @@ footer {
 .summary {
   font-weight: bolder;
   color: #fff;
-  padding-left: 650px;
+  padding-left: 400px;
   animation-name: myAnimation;
   animation-duration: 4s;
 }
