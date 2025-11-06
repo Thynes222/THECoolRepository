@@ -1,0 +1,13 @@
+body {
+    font: 1.2em / 1.5 sans-serif;
+  }
+
+ul {
+    max-width: 400px;
+    background-color: #ffd700;
+    border: 1px solid black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 4;    
+}
