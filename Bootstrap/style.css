@@ -17,3 +17,6 @@
 main{
     background-color: #FDFFFE;
 }
+.carousel-indicators {
+    display: inline-block;
+}
