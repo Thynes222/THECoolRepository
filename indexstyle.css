@@ -2,9 +2,7 @@
     background-image: url(index_images/kamehouse.jpg);
     position: relative;
     background-repeat: no-repeat;
-    margin: 0 auto;
-    top: 0px;
-    background-size: 2000px 2000px;
+    background-size: center;
 }
 
 
@@ -15,6 +13,17 @@ a:link {
 .clock {
     color: #FFD700;
     font-size: 60px;
-    font-family: 'Orbitron', sans-serif; /* Link the font in HTML head */
+    font-family: 'Orbitron', sans-serif; 
     letter-spacing: 7px;
+    text-align: right;
+}
+
+#hiddenImage {
+    display: none;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.visible {
+    display: block;
 }
