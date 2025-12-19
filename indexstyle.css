@@ -27,3 +27,16 @@ a:link {
 .visible {
     display: block;
 }
+
+.projects {
+    text-align: center;
+    border: 5px solid black;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 0;
+    height: 10%;
+}
+
+.container {
+    height: 90%;
+}
