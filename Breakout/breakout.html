@@ -11,7 +11,7 @@
         }
 
         canvas {
-            background: #4B0082;
+            background: #0095c6;
             display: block;
             margin: 0 auto;
         }
@@ -107,7 +107,7 @@
         function drawBall() {
             ctx.beginPath();
             ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-            ctx.fillStyle = "#FFD700";
+            ctx.fillStyle = "#a7cd3c";
             ctx.fill();
             ctx.closePath();
         }
@@ -149,7 +149,7 @@
                         bricks[c][r].y = brickY;
                         ctx.beginPath();
                         ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                        ctx.fillStyle = "#ED7014";
+                        ctx.fillStyle = "#fff";
                         ctx.fill();
                         ctx.closePath();
                     }
