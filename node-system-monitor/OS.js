@@ -3,11 +3,25 @@ const os = require('os');
 
 
 
-console.log("Platform: " + os.platform());
-console.log("CPU Cores: " + os.cpus().length);
-console.log("Total Memory (MB): " + os.totalmem() / (1024 * 1024));
-console.log("Free Memory (MB): " + os.freemem() / (1024 * 1024));
-console.log("System Uptime (seconds): " + os.uptime());
+function sysinfo(){// Basic system information
+    console.log(`OS Platform: ${os.platform()}`);
+    console.log(`OS Type: ${os.type()}`);
+    console.log(`OS Release: ${os.release()}`);
+    console.log(`CPU Architecture: ${os.arch()}`);
+    console.log(`Hostname: ${os.hostname()}`);
 
-console.log("Process Uptime (seconds): " + process.uptime());
-console.log("Process Memory Usage: ", process.memoryUsage());
+    // Memory information
+    const totalMemGB = (os.totalmem() / (1024 * 1024 * 1024)).toFixed(2);
+    const freeMemGB = (os.freemem() / (1024 * 1024 * 1024)).toFixed(2);
+    console.log(`Memory: ${freeMemGB}GB free of ${totalMemGB}GB`);
+
+    // User information
+    const userInfo = os.userInfo();
+    console.log(`Current User: ${userInfo.username}`);
+    console.log(`Home Directory: ${os.homedir()}`);
+
+    
+
+}
+
+document.getElementById("output-area").innerHTML = totalMemGB;
