@@ -1,5 +1,8 @@
 var osutils = require('os-utils');
 const os = require('os');
+let http = require('http');
+
+
 
 
 
@@ -20,8 +23,15 @@ function sysinfo(){// Basic system information
     console.log(`Current User: ${userInfo.username}`);
     console.log(`Home Directory: ${os.homedir()}`);
 
-    
 
 }
 
-document.getElementById("output-area").innerHTML = totalMemGB;
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World!');
+}).listen(8002); 
+
+
+sysinfo();
+
+// document.getElementById("output-area").innerHTML = totalMemGB;
