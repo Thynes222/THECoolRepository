@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API page</title>
-</head>
-<body>
-    <script src="apis.js"></script>
+    <link rel="stylesheet" href="apis.css">
 
-    
-    
+</head>
+
+<body>
+
+
+    <div class="header-actions"></div>
+
+        <div class="image-toggle-row">
+
+            <button type="button" id="toggleImage" class="btn btn--lg btn--row" aria-pressed="false">NOT image swap</button>
+            <button type="button" class="btn btn--lg btn--row">Pokemon</button>
+        </div>
+
+        <div id="pokemon-display"></div>
+    </div>
+
+    <aside class="header-card" aria-label="Image">
+        <div class="header-image" aria-hidden="true" style="background-image: url('images/sidebar-image.png');"></div>
+    </aside>
+
+        <script>
+        const button2 = document.querySelector('.image-toggle-row .btn:nth-child(2)');
+        const pokemonDiv = document.createElement('div');
+        pokemonDiv.id = 'pokemon-display';
+        document.querySelector('.header-actions').appendChild(pokemonDiv);
+
+        button2.addEventListener('click', () => {
+
+            const randomId = Math.floor(Math.random() * 1010) + 1;
+            fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`)
+
+                .then(response => response.json())
+                .then(data => {
+
+                    const name = data.name.charAt(0).toUpperCase() + data.name.slice(1);
+                    const image = data.sprites.front_default;
+                    const stats = data.stats.map(stat => `${stat.stat.name}: ${stat.base_stat}`).join('<br>');
+                    headerImageEl.style.backgroundImage = `url(${image})`;
+                    pokemonDiv.innerHTML = `<h3>${name}</h3><div>${stats}</div>`;
+
+                })
+
+                .catch(error => {
+
+                    pokemonDiv.innerHTML = 'Error loading Pokémon.';
+                    console.error(error);
+
+                });
+
+        });
+
+
+
+
+    </script>
+
+
+
+
 </body>
+
 </html>
