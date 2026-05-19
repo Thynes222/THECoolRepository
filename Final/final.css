@@ -1,0 +1,41 @@
+.heading {
+    background-image: url(images/forestedbg12.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: #59524a;
+}
+
+.heading2 {
+    background-image: url(images/forestedbg13.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: #121212;
+}
+
+.heading3 {
+    background-image: url(images/forestedbg15.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.heading4 {
+    background-image: url(images/forestedbg4.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.heading5 {
+    background-image: url(images/forestedbg11.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
