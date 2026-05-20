@@ -39,3 +39,33 @@
     background-size: cover;
     text-align: center;
 }
+
+.tree-container {
+    transform: rotate(180deg);
+    width: 75px;
+    height: 100px;
+    padding-left: 850px;
+}
+
+.tree-spacer {
+    width: 75px;
+    height: -200px;
+}
+
+@keyframes tree {
+    0% {background-color: rgb(102, 73, 29); height: 60px;}
+    25% {background-color: rgb(102, 73, 29); height: 70px;}
+    50% {background-color: rgb(102, 73, 29); height: 80px;}
+    75% {background-color: rgb(102, 73, 29); height: 90px;}
+    100% {background-color: rgb(102, 73, 29); height: 100px;}
+}
+
+.tree {
+    width: 75px;
+    height: 50px; 
+    background-color: rgb(102, 73, 29);
+    animation-name: tree;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: bottom;
+}
