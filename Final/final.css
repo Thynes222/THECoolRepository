@@ -41,10 +41,15 @@
 }
 
 .tree-container {
+    /*background-color: red;*/
     transform: rotate(180deg);
-    width: 75px;
+    width: 100%;
     height: 100px;
-    padding-left: 850px;
+    
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
 }
 
 .tree-spacer {
@@ -68,4 +73,52 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     position: bottom;
+}
+
+.tree ::after {
+    width: 90px;
+    height: 30px;
+    background-color: greenyellow;
+}
+
+.sign-container {
+    width: 300px;
+    height: 160px;
+}
+
+.sign {
+    width: 300px;
+    height: 80px;
+    background-color: rgb(66, 50, 27);
+    border-color: black;
+}
+
+.leftHitch {
+    width: 10px;
+    height: 80px;
+    background-color: rgb(66, 50, 27);
+    border-color: black;
+}
+
+.rightHitch {
+    width: 10px;
+    height: 80px;
+    background-color: rgb(66, 50, 27);
+    border-color: black;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+}
+
+.hitchSpace {
+    width: 70px;
+    height: 1px;
+}
+
+.tortoise {
+    padding-left: 800px;
+}
+
+.SnappingTurtle {
+    padding-left: 50px;
 }
