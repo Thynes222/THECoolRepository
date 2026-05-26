@@ -41,44 +41,64 @@
 }
 
 .tree-container {
-    /*background-color: red;*/
     transform: rotate(180deg);
-    width: 100%;
-    height: 100px;
-    
+    width: 100px;
+    height: 200px;
     display: flex;
     justify-content: center;
     justify-items: center;
-    
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px, black, solid;
+    background-color: red;
 }
 
-.tree-spacer {
-    width: 75px;
-    height: -200px;
+.tree-leaves-container {
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    animation-name: tree-leaves;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: top;
 }
 
-@keyframes tree {
-    0% {background-color: rgb(102, 73, 29); height: 60px;}
-    25% {background-color: rgb(102, 73, 29); height: 70px;}
-    50% {background-color: rgb(102, 73, 29); height: 80px;}
-    75% {background-color: rgb(102, 73, 29); height: 90px;}
-    100% {background-color: rgb(102, 73, 29); height: 100px;}
+@keyframes tree-leaves {
+    0% {background-color: green; height: 1px;}
+    25% {background-color: green; height: 1px;}
+    50% {background-color: green; height: 12px;}
+    75% {background-color: green; height: 25px;}
+    100% {background-color: green; height: 25px;}
 }
 
-.tree {
-    width: 75px;
-    height: 50px; 
-    background-color: rgb(102, 73, 29);
+.tree-leaves {
+    width: 1px;
+    height: 1px;
+    background-color: green;
+}
+
+.tree-trunk-container {
+    width: 50%;
+    height: 10%;
+    background-color: white;
     animation-name: tree;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     position: bottom;
 }
 
-.tree ::after {
-    width: 90px;
-    height: 30px;
-    background-color: greenyellow;
+@keyframes tree {
+    0% {height: 20%;}
+    25% {height: 30%;}
+    50% {height: 50%;}
+    75% {height: 70%;}
+    100% {height: 80%;}
+}
+
+.tree {
+    width: 30%;
+    height: 100%; 
+    background-color: rgb(102, 73, 29);  
 }
 
 .sign-container {
@@ -87,10 +107,11 @@
 }
 
 .sign {
-    width: 300px;
-    height: 80px;
+    width: 100%;
+    height: 50%;
     background-color: rgb(66, 50, 27);
     border-color: black;
+    position: bottom;
 }
 
 .leftHitch {
@@ -98,6 +119,8 @@
     height: 80px;
     background-color: rgb(66, 50, 27);
     border-color: black;
+    display: flex;
+    position: top;
 }
 
 .rightHitch {
@@ -106,8 +129,7 @@
     background-color: rgb(66, 50, 27);
     border-color: black;
     display: flex;
-    justify-content: right;
-    position: absolute;
+    position: top;
 }
 
 .hitchSpace {
@@ -115,10 +137,33 @@
     height: 1px;
 }
 
-.tortoise {
+.Tortoise {
     padding-left: 800px;
 }
 
 .SnappingTurtle {
     padding-left: 50px;
+}
+
+.SkyTurtle {
+    padding-left: 1120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.clock {
+    color: #FFD700;
+    font-size: 60px;
+    font-family: 'Orbitron', sans-serif; 
+    letter-spacing: 7px;
+    text-align: right;
+}
+
+a:link {
+    color: #FFD700;
+}
+
+a:visited {
+    color: #FFD700;
 }
