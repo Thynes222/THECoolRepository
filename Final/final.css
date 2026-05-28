@@ -1,3 +1,5 @@
+/* Used for the background images on each page.*/
+
 .heading {
     background-image: url(images/forestedbg12.jpg);
     position: relative;
@@ -33,12 +35,14 @@
 }
 
 .heading5 {
-    background-image: url(images/forestedbg11.jpg);
+    background-image: url(images/forestedbg16.jpg);
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 }
+
+/* All the stuff used to create the tree on page 3. */
 
 .tree-container-box {
     width: 100%;
@@ -106,13 +110,16 @@
     background-color: rgb(102, 73, 29);  
 }
 
+/* All the stuff used to create and style the sign on page 3. */
+
 .sign-container {
     width: 300px;
     height: 160px;
     display: flex;
+    flex-wrap: wrap;
     display: inline-block;
     position: relative;
-    background-color: white;
+    background-color: rgb(13, 119, 218);
 }
 
 .sign {
@@ -124,33 +131,36 @@
 }
 
 .hitchContainer {
-    display: flex;
-    display: inline-block;
     background-color: red;
     position: relative;
+    height: 50%;
+    width: 100%;
 }
 
 .leftHitch {
-    width: 10px;
-    height: 80px;
+    width: 10%;
+    height: 100%;
     background-color: rgb(66, 50, 27);
     border-color: black;
     position: relative;
 }
 
 .rightHitch {
-    width: 10px;
-    height: 80px;
+    width: 10%;
+    height: 100%;
     background-color: rgb(66, 50, 27);
     border-color: black;
     position: relative;
 }
 
 .hitchSpace {
-    width: 280px;
-    height: 1px;
+    width: 80%;
+    height: 100%;
     position: relative;
+    background-color: #FFD700;
 }
+
+/* Used for placing each turtle image on the pages, I know padding is jank, but whatever */
 
 .Tortoise {
     padding-left: 990px;
@@ -171,13 +181,18 @@
     left: 0;
 }
 
+/* This is the clock on page 4. */
+
 .clock {
     color: #FFD700;
     font-size: 60px;
     font-family: 'Orbitron', sans-serif; 
     letter-spacing: 7px;
     text-align: right;
+    position: relative;
 }
+
+/* Used for styling the links. */
 
 a:link {
     color: #FFD700;
@@ -188,6 +203,8 @@ a:visited {
     color: #FFD700;
     font-weight: bold;
 }
+
+/* These are used to style the text seen on the 5 pages. */
 
 .text4pg1 {
     font-size: 23px;
@@ -222,7 +239,6 @@ a:visited {
 .text4pg5 {
     font-size: 23px;
     font-weight: bold;
-    color: rgb(145, 255, 0);
-    text-shadow: #ffffff 3px 1px;
-    -webkit-text-stroke: 1px #000;
+    color: rgb(255, 255, 255);
+    
 }

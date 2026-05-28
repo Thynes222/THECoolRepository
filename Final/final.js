@@ -21,3 +21,7 @@ function checkTime(i) {
     }
     return i;
 }
+
+function exButton() {
+  document.getElementById("demo").innerHTML = "This is text being displayed from clicking the button.";
+}
