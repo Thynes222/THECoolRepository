@@ -1,3 +1,5 @@
+// This is for the clock on page 4
+
 function startTime() {
     const today = new Date();
     let h = today.getHours();
@@ -21,6 +23,8 @@ function checkTime(i) {
     }
     return i;
 }
+
+// This is an example of a very basic button for page 4
 
 function exButton() {
   document.getElementById("demo").innerHTML = "This is text being displayed from clicking the button.";

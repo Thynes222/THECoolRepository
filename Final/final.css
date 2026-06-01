@@ -181,6 +181,11 @@
     left: 0;
 }
 
+.BoxTurtle {
+    padding-left: 1500px;
+    position: relative;
+}
+
 /* This is the clock on page 4. */
 
 .clock {
