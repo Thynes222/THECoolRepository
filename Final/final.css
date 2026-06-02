@@ -1,4 +1,4 @@
-/* Used for the background images on each page.*/
+/* Used for the background images on each page. */
 
 .heading {
     background-image: url(images/forestedbg12.jpg);
@@ -118,7 +118,6 @@
     display: flex;
     flex-wrap: wrap;
     display: inline-block;
-    position: relative;
     background-color: rgb(13, 119, 218);
 }
 
@@ -126,13 +125,16 @@
     width: 100%;
     height: 50%;
     background-color: rgb(66, 50, 27);
-    border-color: black;
+    border: #000 2.5px solid;
     position: relative;
 }
 
 .hitchContainer {
     background-color: red;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
     height: 50%;
     width: 100%;
 }
@@ -141,7 +143,7 @@
     width: 10%;
     height: 100%;
     background-color: rgb(66, 50, 27);
-    border-color: black;
+    border: #000 2.5px solid;
     position: relative;
 }
 
@@ -149,7 +151,7 @@
     width: 10%;
     height: 100%;
     background-color: rgb(66, 50, 27);
-    border-color: black;
+    border: #000 2.5px solid;
     position: relative;
 }
 
@@ -160,14 +162,15 @@
     background-color: #FFD700;
 }
 
-/* Used for placing each turtle image on the pages, I know padding is jank, but whatever */
+/* Used for placing each turtle image on the pages, I know padding is jank, but whatever... */
 
 .Tortoise {
     padding-left: 990px;
 }
 
 .Tortoise2 {
-    padding-right: 95px;
+    padding-left: 145px;
+    position: absolute;
 }
 
 .SnappingTurtle {
@@ -184,6 +187,16 @@
 .BoxTurtle {
     padding-left: 1500px;
     position: relative;
+}
+
+/* This is the stuff for the HTML tree on page 2. */
+
+.asciiLeaves {
+    color: lawngreen;
+}
+
+.asciiBark {
+    color: rgb(82, 75, 40);
 }
 
 /* This is the clock on page 4. */
