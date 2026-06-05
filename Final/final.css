@@ -121,7 +121,6 @@
     display: inline-block;
     justify-items: center;
     margin: auto;
-    background-color: rgb(13, 119, 218);
 }
 
 .sign {
@@ -133,12 +132,10 @@
 }
 
 .hitchContainer {
-    background-color: red;
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    display: inline-block;
     height: 50%;
     width: 100%;
 }
@@ -149,6 +146,7 @@
     background-color: rgb(66, 50, 27);
     border: #000 2.5px solid;
     position: relative;
+    align-self: left;
 }
 
 .rightHitch {
@@ -157,13 +155,13 @@
     background-color: rgb(66, 50, 27);
     border: #000 2.5px solid;
     position: relative;
+    align-self: right;
 }
 
 .hitchSpace {
-    width: 80%;
+    width: 77.3%;
     height: 100%;
     position: relative;
-    background-color: #FFD700;
 }
 
 /* Used for placing each turtle image on the pages, I know padding is jank, but whatever... */
